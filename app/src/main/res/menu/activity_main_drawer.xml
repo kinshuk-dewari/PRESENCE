@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/team_s_attendance"
+            android:icon="@drawable/team"
+            android:id="@+id/teamsAttendance"/>
+
+        <item android:title="@string/add_location"
+            android:icon="@drawable/location"
+            android:id="@+id/addLocation"/>
+        <item android:title="@string/add_user"
+            android:icon="@drawable/add_user"
+            android:id="@+id/addUser"/>
+    </group>
+
+</menu>

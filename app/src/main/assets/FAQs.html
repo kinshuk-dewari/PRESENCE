@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+</head>
+<style>
+    :root {
+        padding: 3px;
+        margin: 0;
+        --bg-color: green;
+        --txt-color: white;
+        --txt-size:2rem;
+        --app-theme-dark:#8956F1;
+        --app-theme-light:#CB80FF;
+        --app-theme-xdark:#241B35; 
+        --app-bg:#FFFFFF;      
+        
+    }
+    a{
+        text-decoration: none;
+    }
+    img{
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    .hhv:hover{
+        scale:1.5;
+    }
+    .heading{ 
+        font-size: 3rem;
+        font-weight: 800;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    .nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: right;
+        gap: 10px;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .content{
+        padding:10px 10px 10px 20px;
+        background-color: var(--app-theme-dark);
+        border-radius: 6px;
+    }
+    .content:hover{
+        background-color: var(--app-theme-light);
+        color: ;
+    }
+    .contentX{
+        padding:10px 10px 10px 20px;
+        background-color: var(--app-theme-light);
+        border-radius: 6px;
+    }
+    .contentX:hover{
+        background-color: var(--app-theme-dark);
+    }
+    .question,.answer{
+        font-size: 1.6rem;
+    }
+    .question{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="heading">FAQs</div>
+    <div class="nav">
+        
+        <div class="icons hhv ">
+             <a href="https://www.linkedin.com/kinshuk-dewari">
+                 <img src="linked.gif" alt="linkedin">
+             </a>
+         </div>
+         <div class="icons hhv">
+             <a href="https://www.instagram.com/kinshuk_dewari">
+                 <img src="insta.gif" alt="instagram">
+                </a>
+        </div>
+        <div class="icons hhv">
+             <a href="https://www.instagram.com/kinshuk_dewari">
+                <img src="gmail.gif" alt="gmail">
+             </a>
+            </div>
+    </div>
+    <div class="column">
+            <div class="content">
+                <div class="card">
+                    <div class="question flex">Q: What is this app for?</div>
+                    <div class="answer flex">A: This is an Android application that provides two portals, one for employers and one for employees, to manage employee attendance using facial recognition technology.</div>
+                </div>
+            </div>
+            <div class="contentX">
+                <div class="card">
+                    <div class="question flex">Q: How does the registration process work for employees?</div>
+                    <div class="answer flex">A: Employees must register on the app using their organization-provided email. They need to submit a photo of their organization ID card, a self-portrait, and fill in all required fields such as name, employee number, etc</div>
+                </div>
+            </div>
+                
+            <div class="content">
+                <div class="card">
+                    <div class="question flex">Q: How does the employer verify employee identity?</div>
+                    <div class="answer flex">A: The employer can verify employee identity from the backend portal after the employee submits their registration information.</div>
+                </div>
+            </div>
+        <div class="contentX">
+            <div class="card">
+                <div class="question flex">Q: How do employees mark their attendance?</div>
+                <div class="answer flex">A: Employees can mark their attendance by looking at the camera within a specific time slot at the organization's location.</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="question flex">Q: How is employee attendance marked?</div>
+                <div class="answer flex">A: Employee attendance is marked through facial recognition technology, and the attendance is listed in the database once it is done.</div>
+            </div>
+        </div>
+        <div class="contentX">
+            <div class="card">
+                <div class="question flex">Q: What information is recorded for marked attendance?</div>
+                <div class="answer flex">A: Marked attendance includes employee entry and exit times along with all basic details.
+
+                </div>
+            </div>
+        </div>
+            <div class="content">
+            <div class="card">
+                <div class="question flex">Can employees check their attendance from anywhere?</div>
+                <div class="answer flex">A: Yes, employees can check their marked attendance from anywhere within the provided geo-location</div>
+            </div>
+        </div>
+            <div class="contentX">
+            <div class="card">
+                <div class="question flex">Q: Who can download attendance information?</div>
+                <div class="answer flex">A: Only the employer can download attendance information at any time.</div>
+            </div>
+        </div>
+            <div class="content">
+            <div class="card">
+                <div class="question flex">Q: What is the Todo List feature of this app?</div>
+                <div class="answer flex">A: The Todo List is a feature that allows employees to maintain their task completion and task schedule in a single place.</div>
+            </div>
+        </div>
+            <div class="contentX">
+            <div class="card">
+                <div class="question flex">Q: Can employees prioritize their tasks on the Todo List?</div>
+                <div class="answer flex">A: Yes, employees can prioritize their tasks on the Todo List.</div>
+            </div>
+        </div>
+            <div class="content">
+            <div class="card">
+                <div class="question flex">Q: Is the Todo List feature only accessible to employees?</div>
+                <div class="answer flex">A: Yes, the Todo List feature is only accessible to employees.</div>
+            </div>
+        </div>
+        <div class="contentX">
+            <div class="card">
+                <div class="question flex">Q: What is the Event Page feature of this app?</div>
+                <div class="answer flex">A: The Event Page is a feature that informs employees about upcoming news, holidays, or important bulletins of the company.</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="question flex">Q: Is the Event Page feature customizable?</div>
+                <div class="answer flex">A: Yes, the Event Page feature can be customized according to the company's requirements.</div>
+            </div>
+        </div>
+        <div class="contentX">
+            <div class="card">
+                <div class="question flex">Q: What is the Apply for Leave section feature of this app?</div>
+                <div class="answer flex">A: The Apply for Leave section is a feature that allows employees to directly apply for leave to their employer.</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="question flex">Q: Is the Apply for Leave section feature accessible to all employees?</div>
+                <div class="answer flex">A: Yes, the Apply for Leave section feature is accessible to all employees.</div>
+            </div>
+        </div>
+        <div class="contentX">
+            <div class="card">
+                <div class="question flex">Q: What is the Streak section feature of this app?</div>
+                <div class="answer flex">A: The Streak section is a feature that maintains the streaks of the user for their attendance.</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="question flex">Q: Can employees track their attendance streaks using the Streak section?</div>
+                <div class="answer flex">A: Yes, employees can track their attendance streaks using the Streak section.</div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

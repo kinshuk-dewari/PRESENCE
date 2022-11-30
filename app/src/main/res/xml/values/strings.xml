@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Presence</string>
+    <string name="email">Email</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_account_register">Don\'t Have Account ? Register</string>
+    <string name="sign_in">Sign In</string>
+    <string name="gender">Gender</string>
+    <string name="employee">Employee Id</string>
+    <string name="phone_no">Phone No</string>
+    <string name="emailRegister">Email</string>
+    <string name="id_card_no">Id Card No</string>
+    <string name="passwordRegister">Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="settings">SETTINGS</string>
+    <string name="home">HOME</string>
+    <string name="profile">PROFILE</string>
+    <string name="setting">Setting</string>
+    <string name="sign_out1">Sign Out</string>
+    <string name="mark_attendance">Mark Attendance</string>
+    <string name="show_attendance">Show Attendance</string>
+    <string name="add_location">ADD LOCATION</string>
+    <string name="team_s_attendance">TEAM\'S ATTENDANCE</string>
+    <string name="location">Location</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="customer_care">Customer Care</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="office_address">Office Address</string>
+    <string name="designation">Designation</string>
+    <string name="employee_Id">Employee Id</string>
+    <string name="full_name">Full Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="log_out">Log Out</string>
+    <string name="add_user">ADD USER</string>
+
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

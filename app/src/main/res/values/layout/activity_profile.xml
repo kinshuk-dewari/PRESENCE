@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.presence.bottom_navigation.Profile"
+    android:background="#00000000"
+    tools:openDrawer="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView2"
+            style="@style/DarkModeHidden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_topbk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImageView"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_user"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/input"
+            android:elevation="8dp"
+            app:cardCornerRadius="@dimen/loginCardRadius"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.992">
+
+            <LinearLayout
+                style="@style/linearParent"
+                android:layout_gravity="center"
+                android:padding="@dimen/loginViewsMargin">
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/modifiedEditText"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:hint="Full Name"
+                android:editable="false"
+                android:maxLines="1" />
+
+
+            <EditText
+                android:id="@+id/phoneNo"
+                style="@style/modifiedEditText"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:hint="Mobile Number"
+                android:editable="false"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/modifiedEditText"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:hint="@string/login_email_hint"
+                android:editable="false"
+                android:maxLines="1" />
+
+
+            <EditText
+                android:id="@+id/employeeId"
+                style="@style/modifiedEditText"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:hint="Employee Id"
+                android:editable="false"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/officeAddress"
+                style="@style/modifiedEditText"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:hint="Office Address"
+                android:editable="false"
+                android:maxLines="1" />
+
+
+            <EditText
+                android:id="@+id/gender"
+                style="@style/modifiedEditText"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:hint="Gender"
+                android:editable="false"
+                android:maxLines="1" />
+
+
+            <EditText
+                android:id="@+id/designation"
+                style="@style/modifiedEditText"
+                android:layout_marginTop="@dimen/signup_text_margin_top"
+                android:hint="Designation"
+                android:editable="false"
+                android:maxLines="1" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation1"
+            style="@style/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:background="@drawable/input"
+            android:elevation="3dp"
+            app:elevation="10dp"
+            app:itemIconTint="@drawable/selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemTextColor="@drawable/selector"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/master_bottom_navigation" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="invisible"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:scaleType="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

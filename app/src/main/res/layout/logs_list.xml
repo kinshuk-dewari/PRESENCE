@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="5dp"
+    android:backgroundTint="#244D61"
+    app:cardCornerRadius="20dp"
+    tools:context="com.example.presence.attendance.Logs"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="6dp">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:background="@drawable/home_gradient_maths"
+            android:minHeight="100dp"
+            android:padding="5dp">
+
+            <ImageView
+                style="@style/homeCardImage"
+                android:layout_width="60dp"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="left"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="301dp"
+                android:layout_marginBottom="40dp"
+                android:src="@drawable/calendar" />
+
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="74dp"
+                android:layout_marginLeft="90dp"
+                android:textFontWeight="900"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="sans-serif"
+                android:text="Date : "
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/employeeId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="9dp"
+                android:textFontWeight="650"
+                android:fontFamily="sans-serif"
+                android:text="Id-Name : "
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/entry_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="In : "
+            android:paddingLeft="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/exit_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Out : "
+            android:paddingLeft="19dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:paddingLeft="18dp"
+            app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

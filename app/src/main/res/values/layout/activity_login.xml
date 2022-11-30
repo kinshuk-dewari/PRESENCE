@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    tools:context="com.example.presence.authentication.LoginActivity">
+        <RelativeLayout
+            style="@style/parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                style="@style/headerText"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Presence"
+                android:textSize="34sp" />
+            <ScrollView
+                android:id="@+id/scrollView"
+                style="@style/parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="508dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/headerText"
+                    android:id="@+id/magic_cloak0"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textSize="34sp" />
+                <TextView
+                    style="@style/headerText"
+                    android:id="@+id/magic_cloak1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textSize="34sp" />
+                <TextView
+                    style="@style/headerText"
+                    android:id="@+id/magic_cloak2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textSize="34sp" />
+                <TextView
+                    style="@style/headerText"
+                    android:id="@+id/magic_cloak3"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textSize="34sp" />
+                <TextView
+                    style="@style/headerText"
+                    android:id="@+id/magic_cloak4"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textSize="34sp" />
+                <TextView
+                    style="@style/headerText"
+                    android:id="@+id/magic_cloak5"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textSize="34sp" />
+                <TextView
+                    style="@style/headerText"
+                    android:id="@+id/magic_cloak6"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textSize="34sp" />
+                <TextView
+                    style="@style/headerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:id="@+id/magic_cloak7"
+                    android:layout_gravity="center"
+                    android:textSize="34sp" />
+
+                <include layout="@layout/layout_login" />
+                <TextView
+                    style="@style/headerText"
+                    android:id="@+id/magic_cloak11"
+                    android:layout_gravity="center"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="190dp"
+                    android:textSize="34sp" />
+            </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+</RelativeLayout>
