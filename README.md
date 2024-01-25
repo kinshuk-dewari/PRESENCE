@@ -1,6 +1,8 @@
 # PRESENCE
 Android App for Attendance Marking through Facial Recognition and Geofencing. <br>
-## Tech Stack:
+## Live demo : 
+### https://www.linkedin.com/posts/kinshuk-dewari_hackathon-sih2022-activity-7133862951580577792-JZQO?utm_source=share&utm_medium=member_desktop
+### Tech Stack:
 <pre>Android(Kotlin), Firebase ,TensorFlow Lite </pre>
 • Designed and Developed a Smart Attendance capturing Android App which
 uses Facial recognition and Geo-fencing for marking the attendance.<br>
